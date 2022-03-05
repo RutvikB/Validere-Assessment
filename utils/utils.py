@@ -1,3 +1,6 @@
+import json
+import logging
+
 def load_config_dict(config_path: str) -> dict:
         """
         Loads the config.ini file from the specified path, as a dictionary.
@@ -22,7 +25,7 @@ def load_config_dict(config_path: str) -> dict:
         
         return config_dict
 
-def data_loading_function(path: str): 
+def load_data(path: str): 
     """ 
     Function to load the data in the specified path as a 
     Pandas DataFrame. 
@@ -48,3 +51,5 @@ def data_loading_function(path: str):
             data = pd.DataFrame(columns=['field_id', 'year']) 
             
     return data
+
+
