@@ -7,14 +7,18 @@ dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=1_gnu
   - alsa-lib=1.2.3=h516909a_0
+  - asttokens=2.0.5=pyhd8ed1ab_0
   - attrs=21.4.0=pyhd8ed1ab_0
+  - backcall=0.2.0=pyh9f0ad1d_0
+  - backports=1.0=py_2
+  - backports.functools_lru_cache=1.6.4=pyhd8ed1ab_0
   - blosc=1.21.0=h9c3ff4c_0
   - boost-cpp=1.74.0=h6cacc03_7
   - branca=0.4.2=pyhd8ed1ab_0
   - brotli=1.0.9=h7f98852_6
   - brotli-bin=1.0.9=h7f98852_6
   - brotlipy=0.7.0=py39h3811e60_1003
-  - bzip2=1.0.8=h7b6447c_0
+  - bzip2=1.0.8=h7f98852_4
   - c-ares=1.18.1=h7f98852_0
   - ca-certificates=2021.10.8=ha878542_0
   - cairo=1.16.0=ha00ac49_1009
@@ -29,6 +33,10 @@ dependencies:
   - curl=7.81.0=h2574ce0_0
   - cycler=0.11.0=pyhd8ed1ab_0
   - dbus=1.13.6=h5008d03_3
+  - debugpy=1.5.1=py39he80948d_0
+  - decorator=5.1.1=pyhd8ed1ab_0
+  - entrypoints=0.4=pyhd8ed1ab_0
+  - executing=0.8.3=pyhd8ed1ab_0
   - expat=2.4.6=h27087fc_0
   - fiona=1.8.21=py39hc5a795b_0
   - folium=0.12.1.post1=pyhd8ed1ab_1
@@ -55,11 +63,16 @@ dependencies:
   - hdf5=1.12.1=nompi_h2750804_103
   - icu=69.1=h9c3ff4c_0
   - idna=3.3=pyhd8ed1ab_0
+  - ipykernel=6.9.1=py39hef51801_0
+  - ipython=8.1.1=py39hf3d152e_0
   - jbig=2.1=h7f98852_2003
+  - jedi=0.18.1=py39hf3d152e_0
   - jinja2=3.0.3=pyhd8ed1ab_0
   - joblib=1.1.0=pyhd8ed1ab_0
   - jpeg=9e=h7f98852_0
   - json-c=0.15=h98cffda_0
+  - jupyter_client=7.1.2=pyhd8ed1ab_0
+  - jupyter_core=4.9.2=py39hf3d152e_0
   - kealib=1.4.14=h87e4c3c_3
   - keyutils=1.6.1=h166bdaf_0
   - kiwisolver=1.3.2=py39h1a9c180_1
@@ -99,6 +112,7 @@ dependencies:
   - libpng=1.6.37=h21135ba_2
   - libpq=14.2=hd57d9b9_0
   - librttopo=1.1.0=hf69c175_9
+  - libsodium=1.0.18=h36c2ea0_1
   - libspatialindex=1.9.3=h9c3ff4c_4
   - libspatialite=5.0.1=h0e567f8_14
   - libssh2=1.10.0=ha56f1ee_2
@@ -118,11 +132,13 @@ dependencies:
   - markupsafe=2.1.0=py39hb9d737c_0
   - matplotlib=3.5.1=py39hf3d152e_0
   - matplotlib-base=3.5.1=py39h2fa2bec_0
+  - matplotlib-inline=0.1.3=pyhd8ed1ab_0
   - munch=2.5.0=py_0
   - munkres=1.1.4=pyh9f0ad1d_0
   - mysql-common=8.0.28=ha770c72_0
   - mysql-libs=8.0.28=hfa10184_0
   - ncurses=6.3=h9c3ff4c_0
+  - nest-asyncio=1.5.4=pyhd8ed1ab_0
   - networkx=2.7=pyhd8ed1ab_0
   - nspr=4.32=h9c3ff4c_1
   - nss=3.74=hb5efdd6_0
@@ -131,8 +147,11 @@ dependencies:
   - openssl=1.1.1l=h7f98852_0
   - packaging=21.3=pyhd8ed1ab_0
   - pandas=1.4.1=py39hde0f152_0
+  - parso=0.8.3=pyhd8ed1ab_0
   - patsy=0.5.2=pyhd8ed1ab_0
   - pcre=8.45=h9c3ff4c_0
+  - pexpect=4.8.0=pyh9f0ad1d_2
+  - pickleshare=0.7.5=py_1003
   - pillow=9.0.1=py39hae2aec6_2
   - pip=22.0.3=pyhd8ed1ab_0
   - pixman=0.40.0=h36c2ea0_0
@@ -140,8 +159,12 @@ dependencies:
   - poppler-data=0.4.11=hd8ed1ab_0
   - postgresql=14.2=h2510834_0
   - proj=8.2.1=h277dcde_0
+  - prompt-toolkit=3.0.27=pyha770c72_0
   - pthread-stubs=0.4=h36c2ea0_1001
+  - ptyprocess=0.7.0=pyhd3deb0d_0
+  - pure_eval=0.2.2=pyhd8ed1ab_0
   - pycparser=2.21=pyhd8ed1ab_0
+  - pygments=2.11.2=pyhd8ed1ab_0
   - pyopenssl=22.0.0=pyhd8ed1ab_0
   - pyparsing=3.0.7=pyhd8ed1ab_0
   - pyproj=3.3.0=py39hab5ddba_1
@@ -155,6 +178,7 @@ dependencies:
   - python-dateutil=2.8.2=pyhd8ed1ab_0
   - python_abi=3.9=2_cp39
   - pytz=2021.3=pyhd8ed1ab_0
+  - pyzmq=22.3.0=py39h37b5a0c_1
   - qt=5.12.9=ha98a1a1_5
   - readline=8.1=h46c0cb4_0
   - requests=2.27.1=pyhd8ed1ab_0
@@ -167,16 +191,19 @@ dependencies:
   - shapely=1.8.0=py39ha65c37e_5
   - six=1.16.0=pyh6c4a22f_0
   - sqlite=3.37.0=h9cd32fc_0
+  - stack_data=0.2.0=pyhd8ed1ab_0
   - statsmodels=0.13.2=py39hce5d2b2_0
   - threadpoolctl=3.1.0=pyh8a188c0_0
   - tiledb=2.7.0=h1e4a385_0
   - tk=8.6.12=h27826a3_0
   - tornado=6.1=py39h3811e60_2
+  - traitlets=5.1.1=pyhd8ed1ab_0
   - tzcode=2021e=h7f98852_0
-  - tzdata=2020b=h7b6447c_0
+  - tzdata=2021e=he74cb21_0
   - unicodedata2=14.0.0=py39h3811e60_0
   - urllib3=1.26.8=pyhd8ed1ab_1
-  - wheel=0.35.1=py_0
+  - wcwidth=0.2.5=pyh9f0ad1d_2
+  - wheel=0.37.1=pyhd8ed1ab_0
   - xerces-c=3.2.3=h8ce2273_4
   - xorg-kbproto=1.0.7=h7f98852_1002
   - xorg-libice=1.0.10=h7f98852_0
@@ -190,7 +217,8 @@ dependencies:
   - xorg-xextproto=7.3.0=h7f98852_1002
   - xorg-xproto=7.0.31=h7f98852_1007
   - xyzservices=2022.2.0=pyhd8ed1ab_0
-  - xz=5.2.5=h7b6447c_0
+  - xz=5.2.5=h516909a_1
+  - zeromq=4.3.4=h9c3ff4c_1
   - zlib=1.2.11=h36c2ea0_1013
   - zstd=1.5.2=ha95c52a_0
 prefix: /root/miniconda3/envs/validere
