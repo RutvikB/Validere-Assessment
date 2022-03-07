@@ -4,6 +4,7 @@ def load_config_file(config_path: str) -> dict:
     """
     import configparser
     import pathlib
+
     converters = {
         "list_int": lambda x: [int(i.strip()) for i in x.split(",")],
         "int_none": lambda x: None if x.lower() == "none" else int(x),
@@ -22,12 +23,12 @@ def load_config_file(config_path: str) -> dict:
     )
 
     # Preprocessing config
-    section = 'preprocessing'
-    config_file['unwanted_features'] = config_data.getlist_str(
-        section, 'unwanted_features'
+    section = "preprocessing"
+    config_file["unwanted_features"] = config_data.getlist_str(
+        section, "unwanted_features"
     )
-    config_file['datetime_feat_ext'] = config_data.get(
-        section, 'datetime_feat_ext'
-    )
+    config_file["datetime_feat_ext"] = config_data.get(section, "datetime_feat_ext")
+    config_file["latitude_feature"] = config_data.get(section, "latitude_feature")
+    config_file["longitude_feature"] = config_data.get(section, "longitude_feature")
 
     return config_file

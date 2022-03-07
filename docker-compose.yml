@@ -9,7 +9,7 @@ services:
       - ./config:/media/validere/config
       - ./data:/media/validere/data
       - ./utils:/media/validere/utils
-      - ./main.py:/media/validere/main.py
+      - ./phmsa_main.ipynb:/media/validere/phmsa_main.ipynb
       - ./env.yml:/media/validere/env.yml
     command: >
       sh -c "tail -f /dev/null"
