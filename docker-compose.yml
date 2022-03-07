@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  daymet_process_dev:
+    build:
+      context: .
+      dockerfile: dockerfiles/Dockerfile
+    image: validere
+    volumes:
+      - ./config:/media/validere/config
+      - ./data:/media/validere/data
+      - ./utils:/media/validere/utils
+      - ./phmsa_main.ipynb:/media/validere/phmsa_main.ipynb
+      - ./env.yml:/media/validere/env.yml
+    command: >
+      sh -c "tail -f /dev/null"
